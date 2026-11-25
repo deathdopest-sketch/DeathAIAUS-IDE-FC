@@ -1,0 +1,358 @@
+@import '@fontsource/chakra-petch/400.css';
+@import '@fontsource/chakra-petch/500.css';
+@import '@fontsource/chakra-petch/600.css';
+@import '@fontsource/chakra-petch/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/600.css';
+@import './styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body, #root { height: 100%; }
+
+  body {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow: hidden;
+  }
+
+  code, pre, textarea, kbd, samp { font-family: var(--font-code); }
+
+  h1, h2, h3, h4 { font-family: var(--font-ui); letter-spacing: 0.04em; }
+
+  select, input, textarea, button { font: inherit; color: inherit; }
+
+  select option { background: var(--bg-tertiary); color: var(--text-primary); }
+
+  :focus-visible {
+    outline: 1px solid rgb(var(--c-signal-base));
+    outline-offset: 2px;
+  }
+
+  ::selection { background: rgb(var(--c-blood-base) / .85); color: #fff; }
+
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 0; }
+  ::-webkit-scrollbar-thumb:hover { background: rgb(var(--c-blood-base)); }
+
+  /* CRT scanlines + film grain over the whole app. Pure decoration. */
+  body::before,
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  body::before {
+    background:
+      radial-gradient(120% 90% at 50% 45%, transparent 55%, rgb(var(--c-void) / var(--vignette)) 100%),
+      repeating-linear-gradient(
+        to bottom,
+        rgb(0 0 0 / var(--scanline-opacity)) 0 1px,
+        transparent 1px 3px
+      );
+    animation: breathe 9s ease-in-out infinite;
+  }
+  body::after {
+    opacity: var(--noise-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    animation: grain 1.2s steps(4) infinite;
+  }
+}
+
+/* ==========================================================================
+   Components  (prefix: dx-)
+   ========================================================================== */
+
+@layer components {
+  /* HUD label: tiny tracked uppercase mono */
+  .dx-label {
+    font-family: var(--font-code);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--text-muted);
+  }
+
+  /* Bracketed tag, e.g. [ AUS ] */
+  .dx-tag {
+    font-family: var(--font-code);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border: 1px solid currentColor;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  /* Panel with a clipped top-right corner */
+  .dx-panel {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+  }
+
+  /* Section header strip used at the top of every pane */
+  .dx-pane-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    height: var(--header-h);
+    padding: 0 var(--space-4);
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-primary);
+    flex-shrink: 0;
+  }
+  .dx-pane-header > .dx-label:first-child::before { content: '// '; color: rgb(var(--c-blood-light)); }
+
+  /* --- Buttons --------------------------------------------------------- */
+  .dx-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 34px;
+    padding: 0 16px;
+    font-family: var(--font-code);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    background: transparent;
+    border: 1px solid var(--border-primary);
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+    cursor: pointer;
+    transition: color .12s, background-color .12s, border-color .12s;
+    white-space: nowrap;
+  }
+  .dx-btn:hover:not(:disabled) {
+    border-color: rgb(var(--c-blood-base));
+    color: #fff;
+    background: rgb(var(--c-blood-base) / .12);
+    animation: rgb-split .28s steps(2) 1;
+    text-shadow: -1px 0 var(--glitch-a), 1px 0 var(--glitch-b);
+  }
+  .dx-btn:active:not(:disabled) { transform: translate(1px, 1px); }
+  .dx-btn:disabled { color: var(--button-disabled-text); background: var(--button-disabled-bg); border-color: var(--border-secondary); cursor: not-allowed; }
+
+  .dx-btn-primary { background: rgb(var(--c-blood-base)); border-color: rgb(var(--c-blood-base)); color: rgb(var(--c-bone)); }
+  .dx-btn-primary:hover:not(:disabled) { background: rgb(var(--c-blood-light)); border-color: rgb(var(--c-blood-light)); color: rgb(var(--c-void)); }
+
+  .dx-btn-success { border-color: rgb(var(--c-phosphor-base) / .6); color: rgb(var(--c-phosphor-base)); }
+  .dx-btn-success:hover:not(:disabled) { background: rgb(var(--c-phosphor-base) / .12); border-color: rgb(var(--c-phosphor-base)); color: rgb(var(--c-phosphor-light)); }
+
+  .dx-btn-danger { color: rgb(var(--c-blood-light)); border-color: rgb(var(--c-blood-base) / .7); }
+
+  .dx-btn-icon { width: 34px; padding: 0; }
+  .dx-btn-lg { height: 44px; font-size: 12px; padding: 0 22px; }
+
+  /* --- Fields ---------------------------------------------------------- */
+  .dx-input {
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    border-left: 2px solid rgb(var(--c-blood-base) / .5);
+    font-family: var(--font-code);
+    font-size: 13px;
+    transition: border-color .12s, box-shadow .12s;
+  }
+  .dx-input::placeholder { color: var(--text-muted); }
+  .dx-input:focus {
+    outline: none;
+    border-color: rgb(var(--c-signal-base) / .6);
+    border-left-color: rgb(var(--c-blood-base));
+    box-shadow: 0 0 0 1px rgb(var(--c-signal-base) / .15), 0 0 16px -6px rgb(var(--c-signal-base) / calc(.6 * var(--glow-strength)));
+  }
+
+  /* --- Dialogs --------------------------------------------------------- */
+  .dx-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgb(var(--c-void) / .8);
+    backdrop-filter: blur(3px) saturate(.6);
+  }
+  .dx-dialog {
+    position: relative;
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    border-top: 2px solid rgb(var(--c-blood-base));
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px));
+    box-shadow: 0 30px 80px -20px #000;
+    animation: glitch-in .38s steps(6, end) both;
+  }
+
+  /* Corner brackets drawn with gradients — wrap any block */
+  .dx-brackets {
+    --b: rgb(var(--c-blood-base));
+    background:
+      linear-gradient(var(--b), var(--b)) top left / 12px 1px no-repeat,
+      linear-gradient(var(--b), var(--b)) top left / 1px 12px no-repeat,
+      linear-gradient(var(--b), var(--b)) bottom right / 12px 1px no-repeat,
+      linear-gradient(var(--b), var(--b)) bottom right / 1px 12px no-repeat;
+  }
+
+  /* Status dot */
+  .dx-dot { width: 6px; height: 6px; background: currentColor; box-shadow: 0 0 8px currentColor; animation: pulse-dot 1.6s steps(2) infinite; }
+
+  /* Blinking block caret */
+  .dx-caret::after { content: '\2588'; margin-left: 2px; animation: blink 1s steps(1) infinite; color: rgb(var(--c-blood-light)); }
+
+  /* ------------------------------------------------------------------------
+     Glitch text. Usage: <span class="glitch" data-text="DEATHAI">DEATHAI</span>
+     ------------------------------------------------------------------------ */
+  .glitch { position: relative; display: inline-block; }
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: transparent;
+  }
+  .glitch::before {
+    color: var(--glitch-b);
+    transform: translateX(-2px);
+    mix-blend-mode: screen;
+    clip-path: inset(0 0 60% 0);
+    animation: slice-a 3.2s steps(1) infinite;
+  }
+  .glitch::after {
+    color: var(--glitch-a);
+    transform: translateX(2px);
+    mix-blend-mode: screen;
+    clip-path: inset(55% 0 0 0);
+    animation: slice-b 2.7s steps(1) infinite;
+  }
+  /* Calm variant: only glitches on hover */
+  .glitch-hover::before, .glitch-hover::after { opacity: 0; animation-play-state: paused; }
+  .glitch-hover:hover::before, .glitch-hover:hover::after { opacity: 1; animation-play-state: running; }
+
+  /* Periodic horizontal tear on a block */
+  .dx-tear { animation: tear 7s steps(1) infinite; }
+
+  /* Chromatic edge on text */
+  .dx-scan { animation: scan 1.4s steps(12) infinite; }
+
+  /* Failing-fluorescent flicker for status text */
+  .dx-flicker { animation: flicker 7s steps(1) infinite; }
+
+  /* Slow red heartbeat glow (lub-dub ~52bpm) */
+  .dx-heartbeat { animation: heartbeat 1.15s ease-out infinite; }
+
+  .dx-split { text-shadow: -1px 0 rgb(var(--c-blood-base) / .8), 1px 0 rgb(var(--c-signal-base) / .7); }
+}
+
+/* ==========================================================================
+   react-split gutters
+   ========================================================================== */
+.gutter {
+  background: var(--border-secondary);
+  position: relative;
+  transition: background .15s;
+}
+.gutter:hover, .gutter:active { background: rgb(var(--c-blood-base)); box-shadow: 0 0 12px rgb(var(--c-blood-base) / .6); }
+.gutter.gutter-horizontal { cursor: col-resize; }
+.gutter.gutter-vertical { cursor: row-resize; }
+
+/* ==========================================================================
+   Utilities kept for older components
+   ========================================================================== */
+.no-select { user-select: none; -webkit-user-select: none; }
+.animate-spin { animation: spin 1s linear infinite; }
+
+/* ==========================================================================
+   Keyframes
+   ========================================================================== */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes scan { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes breathe { 50% { opacity: .82; } }
+@keyframes flicker {
+  0%, 41%, 44%, 46%, 88%, 100% { opacity: 1; }
+  42%, 45% { opacity: .25; }
+  89% { opacity: .55; }
+}
+@keyframes heartbeat {
+  0% { opacity: .35; box-shadow: none; }
+  8% { opacity: 1; box-shadow: 0 0 14px rgb(var(--c-blood-light) / .8); }
+  16% { opacity: .5; }
+  24% { opacity: 1; box-shadow: 0 0 10px rgb(var(--c-blood-light) / .6); }
+  60%, 100% { opacity: .35; box-shadow: none; }
+}
+@keyframes drip-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes drop-fall {
+  0%, 70% { transform: translateY(0); opacity: 0; }
+  72% { opacity: 1; }
+  100% { transform: translateY(160px); opacity: 0; }
+}
+@keyframes pulse-dot { 50% { opacity: .35; } }
+@keyframes grain {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-3%, 2%); }
+  50% { transform: translate(2%, -3%); }
+  75% { transform: translate(-2%, -1%); }
+}
+@keyframes rgb-split {
+  0% { transform: translate(-1px, 0); }
+  50% { transform: translate(1px, 0); }
+  100% { transform: translate(0, 0); }
+}
+@keyframes glitch-in {
+  0% { opacity: 0; transform: scaleY(.02) skewX(20deg); filter: brightness(3); }
+  30% { opacity: 1; transform: scaleY(1.04) skewX(-6deg); clip-path: inset(10% 0 55% 0); }
+  50% { transform: translateX(-6px); clip-path: inset(40% 0 20% 0); }
+  70% { transform: translateX(4px); clip-path: inset(0 0 0 0); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+@keyframes slice-a {
+  0%   { clip-path: inset(0 0 85% 0); transform: translate(-2px, 0); }
+  8%   { clip-path: inset(30% 0 50% 0); transform: translate(-4px, 0); }
+  10%  { clip-path: inset(70% 0 10% 0); transform: translate(3px, 0); }
+  12%  { clip-path: inset(0 0 100% 0); }
+  60%  { clip-path: inset(45% 0 40% 0); transform: translate(-3px, 0); }
+  62%  { clip-path: inset(0 0 100% 0); }
+}
+@keyframes slice-b {
+  0%   { clip-path: inset(80% 0 0 0); transform: translate(2px, 0); }
+  20%  { clip-path: inset(10% 0 75% 0); transform: translate(5px, 0); }
+  22%  { clip-path: inset(100% 0 0 0); }
+  70%  { clip-path: inset(55% 0 25% 0); transform: translate(-2px, 0); }
+  73%  { clip-path: inset(100% 0 0 0); }
+}
+@keyframes tear {
+  0%, 93%, 100% { transform: none; clip-path: none; filter: none; }
+  94% { transform: translateX(6px); clip-path: inset(30% 0 50% 0); filter: hue-rotate(40deg); }
+  95% { transform: translateX(-4px); clip-path: inset(60% 0 5% 0); }
+  96% { transform: translateX(2px); clip-path: inset(5% 0 80% 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

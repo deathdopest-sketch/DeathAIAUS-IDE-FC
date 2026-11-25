@@ -1,0 +1,9 @@
+{
+  "comment": "Map LM Studio model IDs to friendly names. Edit this file to customize your model names.",
+  "mappings": {
+    "lmstudio_models@q4_k_m": "Codestral 22B Q4_K_M",
+    "lmstudio_models@q4_0": "Your Model Q4_0",
+    "dolphin-2.8-mistral-7b-v02": "Dolphin 2.8 Mistral 7B",
+    "gpt4all_models@q4_0": "GPT4All Q4_0"
+  }
+}

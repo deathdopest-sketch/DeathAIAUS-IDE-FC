@@ -1,0 +1,5 @@
+{
+  "name": "DeathAIAUS IDE F.C V2",
+  "description": "A React-based replica of the 'Brutally Honest AI Coding Assistant' IDE. It provides a feasibility check for project ideas and an AI chat interface to help with coding, all powered by the Gemini API.",
+  "requestFramePermissions": []
+}

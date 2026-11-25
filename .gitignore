@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+workspace/
+workspace_backups/
+*.backup
+
+# AI models (too large for GitHub — download separately)
+*.gguf
+
+# Embedded repos / unrelated projects
+Home-Assistant-custom-components-Xiaomi-Cloud-Map-Extractor/
+go-llama.cpp/
+
+# ReapGate build tools (too large for GitHub)
+ReapGate/mingw-w64.zip
+ReapGate/msys2-installer.exe
+
+# OS
+.DS_Store
+Thumbs.db

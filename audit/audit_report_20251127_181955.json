@@ -1,0 +1,933 @@
+{
+  "timestamp": "2025-11-27T18:19:55.844340",
+  "summary": {
+    "total_tests": 104,
+    "passed": 100,
+    "failed": 4,
+    "success_rate": 96.15384615384616
+  },
+  "phases": {
+    "Phase 1": {
+      "passed": 23,
+      "failed": 2,
+      "tests": [
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Python version check",
+          "passed": true,
+          "message": "Python 3.12.8",
+          "details": {
+            "version": "3.12.8"
+          },
+          "timestamp": "2025-11-27T18:19:51.654136"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Node.js version check",
+          "passed": true,
+          "message": "v22.18.0",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:51.834802"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Go version check",
+          "passed": true,
+          "message": "go version go1.25.4 windows/amd64",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:52.122867"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "WebView2 check",
+          "passed": false,
+          "message": "pywebview not installed",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:52.122867"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Disk space check",
+          "passed": true,
+          "message": "7.52 GB free",
+          "details": {
+            "free_gb": 7.520771026611328
+          },
+          "timestamp": "2025-11-27T18:19:52.123374"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "RAM check",
+          "passed": true,
+          "message": "2.34 GB available",
+          "details": {
+            "available_gb": 2.3359947204589844
+          },
+          "timestamp": "2025-11-27T18:19:52.123374"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Port 8888 availability",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:52.127012"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Port 8889 availability",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:52.127532"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Port 7777 availability",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:52.127532"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Port 3000 availability",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:52.127532"
+        },
+        {
+          "phase": "Phase 1.1",
+          "test_name": "Port 5173 availability",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:52.128139"
+        },
+        {
+          "phase": "Phase 1.2",
+          "test_name": "Python dependencies check",
+          "passed": false,
+          "message": "4/5 installed, missing: pywebview",
+          "details": {
+            "installed": [
+              "requests",
+              "flask",
+              "flask-cors",
+              "psutil"
+            ],
+            "missing": [
+              "pywebview"
+            ]
+          },
+          "timestamp": "2025-11-27T18:19:52.892198"
+        },
+        {
+          "phase": "Phase 1.2",
+          "test_name": "Optional llama-cpp-python",
+          "passed": true,
+          "message": "Installed (full AI power)",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.457940"
+        },
+        {
+          "phase": "Phase 1.2",
+          "test_name": "Node.js dependencies check",
+          "passed": true,
+          "message": "node_modules exists",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "File exists: deathaius_ide_fc.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "File exists: deathaius_ide_hybrid.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "File exists: deathaius_ide_integrated.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "File exists: DeathAIAUS_Launcher.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "File exists: components/__init__.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "File exists: config/model_mappings.json",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "File exists: ui/package.json",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "Components directory",
+          "passed": true,
+          "message": "36 component files found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "React UI build",
+          "passed": true,
+          "message": "ui/dist exists",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "ReapGate executable",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.458452"
+        },
+        {
+          "phase": "Phase 1.3",
+          "test_name": "Google Drive models",
+          "passed": true,
+          "message": "G:/My Drive accessible",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.461969"
+        }
+      ]
+    },
+    "Phase 2": {
+      "passed": 16,
+      "failed": 1,
+      "tests": [
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point exists: deathaius_ide_fc.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.462472"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point valid Python: deathaius_ide_fc.py",
+          "passed": true,
+          "message": "Valid Python",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point exists: deathaius_ide_hybrid.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point valid Python: deathaius_ide_hybrid.py",
+          "passed": true,
+          "message": "Valid Python",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point exists: deathaius_ide_integrated.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point valid Python: deathaius_ide_integrated.py",
+          "passed": true,
+          "message": "Valid Python",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point exists: DeathAIAUS_Launcher.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Entry point valid Python: DeathAIAUS_Launcher.py",
+          "passed": true,
+          "message": "Valid Python",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Batch script exists: scripts/LAUNCH_IDE.bat",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Batch script exists: scripts/launch.bat",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.1",
+          "test_name": "Batch script exists: CREATE_DESKTOP_SHORTCUT.bat",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.463500"
+        },
+        {
+          "phase": "Phase 2.2",
+          "test_name": "Hybrid IDE importable",
+          "passed": true,
+          "message": "Module can be imported",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.464505"
+        },
+        {
+          "phase": "Phase 2.2",
+          "test_name": "Flask available",
+          "passed": true,
+          "message": "Flask 3.1.2",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.489023"
+        },
+        {
+          "phase": "Phase 2.2",
+          "test_name": "WebView available",
+          "passed": false,
+          "message": "pywebview not installed",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.489023"
+        },
+        {
+          "phase": "Phase 2.2",
+          "test_name": "WebView bridge exists",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.489023"
+        },
+        {
+          "phase": "Phase 2.3",
+          "test_name": "Welcome component: components/__init__.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.489023"
+        },
+        {
+          "phase": "Phase 2.3",
+          "test_name": "Welcome component: ui/components/WelcomeScreen.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.489023"
+        }
+      ]
+    },
+    "Phase 3": {
+      "passed": 42,
+      "failed": 0,
+      "tests": [
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/App.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.489023"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/App.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/ui/CodeEditor.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/ui/CodeEditor.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/FileTree.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/FileTree.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/EditorTabs.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/EditorTabs.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/AiChat.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/AiChat.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/Terminal.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/Terminal.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/TaskPlanner.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.490571"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/TaskPlanner.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.491586"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/FeasibilityAnalyzer.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.491586"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/FeasibilityAnalyzer.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.491586"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/SettingsDialog.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.491586"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/SettingsDialog.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.491586"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/WelcomeScreen.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.491586"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/WelcomeScreen.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.492582"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/Toolbar.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.492582"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/Toolbar.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.492582"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/ModelPerformanceTracker.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.492582"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/ModelPerformanceTracker.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/ProjectKnowledgeBase.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/ProjectKnowledgeBase.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/PreviewDialog.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/PreviewDialog.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/Documentation.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/Documentation.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "React component: ui/components/FeaturesList.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Component valid React: ui/components/FeaturesList.tsx",
+          "passed": true,
+          "message": "Valid React/TSX",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.493093"
+        },
+        {
+          "phase": "Phase 3.1",
+          "test_name": "Icon components",
+          "passed": true,
+          "message": "22 icon components found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494104"
+        },
+        {
+          "phase": "Phase 3.2",
+          "test_name": "Tkinter component: components/file_tabs.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494104"
+        },
+        {
+          "phase": "Phase 3.2",
+          "test_name": "Tkinter component: components/code_editor.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494104"
+        },
+        {
+          "phase": "Phase 3.2",
+          "test_name": "Tkinter component: components/ai_chat.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 3.2",
+          "test_name": "Tkinter component: components/git_panel.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 3.2",
+          "test_name": "Tkinter component: components/terminal_tabs.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 3.2",
+          "test_name": "Tkinter component: components/themes.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 3.3",
+          "test_name": "WebView bridge exists",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 3.3",
+          "test_name": "WebView bridge structure",
+          "passed": true,
+          "message": "Has class/methods",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 3.3",
+          "test_name": "React build output",
+          "passed": true,
+          "message": "index.html found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        }
+      ]
+    },
+    "Phase 4": {
+      "passed": 9,
+      "failed": 0,
+      "tests": [
+        {
+          "phase": "Phase 4.1",
+          "test_name": "AI Model Server component",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 4.1",
+          "test_name": "Inference engine component",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 4.1",
+          "test_name": "Google Drive accessible",
+          "passed": true,
+          "message": "G:/My Drive found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:54.494643"
+        },
+        {
+          "phase": "Phase 4.1",
+          "test_name": "Models in Google Drive",
+          "passed": true,
+          "message": "21 .gguf files found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.536680"
+        },
+        {
+          "phase": "Phase 4.2",
+          "test_name": "AIModelServer importable",
+          "passed": true,
+          "message": "Can import",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.835281"
+        },
+        {
+          "phase": "Phase 4.2",
+          "test_name": "AIModelServer instantiable",
+          "passed": true,
+          "message": "Can create instance",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.842818"
+        },
+        {
+          "phase": "Phase 4.3",
+          "test_name": "llama-cpp-python available",
+          "passed": true,
+          "message": "Full AI power enabled",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.842818"
+        },
+        {
+          "phase": "Phase 4.3",
+          "test_name": "InferenceEngineFactory importable",
+          "passed": true,
+          "message": "Can import",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.843832"
+        },
+        {
+          "phase": "Phase 4.4",
+          "test_name": "ReapGate executable",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.843832"
+        }
+      ]
+    },
+    "Quick Audit": {
+      "passed": 10,
+      "failed": 1,
+      "tests": [
+        {
+          "phase": "Quick Audit",
+          "test_name": "Critical file: deathaius_ide_fc.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Critical file: deathaius_ide_hybrid.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Critical file: components/ai_model_server.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Critical file: components/llama_inference.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Critical file: webview_bridge.py",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Critical file: ui/App.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Critical file: ui/components/ui/CodeEditor.tsx",
+          "passed": true,
+          "message": "Found",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Import: requests",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Import: flask",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Import: pywebview",
+          "passed": false,
+          "message": "MISSING - CRITICAL",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        },
+        {
+          "phase": "Quick Audit",
+          "test_name": "Import: psutil",
+          "passed": true,
+          "message": "Available",
+          "details": {},
+          "timestamp": "2025-11-27T18:19:55.844340"
+        }
+      ]
+    }
+  },
+  "issues": [
+    {
+      "phase": "Phase 1.1",
+      "test_name": "WebView2 check",
+      "passed": false,
+      "message": "pywebview not installed",
+      "details": {},
+      "timestamp": "2025-11-27T18:19:52.122867"
+    },
+    {
+      "phase": "Phase 1.2",
+      "test_name": "Python dependencies check",
+      "passed": false,
+      "message": "4/5 installed, missing: pywebview",
+      "details": {
+        "installed": [
+          "requests",
+          "flask",
+          "flask-cors",
+          "psutil"
+        ],
+        "missing": [
+          "pywebview"
+        ]
+      },
+      "timestamp": "2025-11-27T18:19:52.892198"
+    },
+    {
+      "phase": "Phase 2.2",
+      "test_name": "WebView available",
+      "passed": false,
+      "message": "pywebview not installed",
+      "details": {},
+      "timestamp": "2025-11-27T18:19:54.489023"
+    },
+    {
+      "phase": "Quick Audit",
+      "test_name": "Import: pywebview",
+      "passed": false,
+      "message": "MISSING - CRITICAL",
+      "details": {},
+      "timestamp": "2025-11-27T18:19:55.844340"
+    }
+  ]
+}

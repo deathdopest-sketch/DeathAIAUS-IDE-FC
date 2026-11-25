@@ -1,0 +1,226 @@
+{
+  "pantheon": {
+    "codestral-22b-q4_k_m.gguf": {
+      "name": "THANATOS",
+      "mythology": "Greek",
+      "title": "Personification of Death",
+      "role": "Primary Code Generator",
+      "tier": "Primary",
+      "size": "13.3GB",
+      "power": "22B - The Ultimate Authority",
+      "emoji": "👑",
+      "aliases": ["DeathAIAUS-THANATOS-22B-Q4_K_M.gguf", "deathaius-thanatos-22b-q4_k_m.gguf"]
+    },
+    "qwen2.5-coder-7b-instruct-q4_0.gguf": {
+      "name": "MORRIGAN",
+      "mythology": "Celtic",
+      "title": "Goddess of Death, War, and Prophecy",
+      "role": "Code Analyst & Bug Prophet",
+      "tier": "Primary",
+      "size": "4.7GB",
+      "power": "7B Coder Specialist",
+      "emoji": "🔮"
+    },
+    "lfm2-1.2b-q8_0.gguf": {
+      "name": "ANUBIS",
+      "mythology": "Egyptian",
+      "title": "Judge of Souls",
+      "role": "Quick Validator/Tester",
+      "tier": "Primary",
+      "size": "1.2GB",
+      "power": "Small but Precise",
+      "emoji": "⚖️"
+    },
+    "mistral-7b-instruct-v0.1.q4_0.gguf": {
+      "name": "HEL",
+      "mythology": "Norse",
+      "title": "Goddess of the Underworld",
+      "role": "General-Purpose Assistant",
+      "tier": "Primary",
+      "size": "4.1GB",
+      "power": "7B Instruct Model",
+      "emoji": "❄️"
+    },
+    "nous-hermes-2-mistral-7b-dpo.q4_0.gguf": {
+      "name": "ARES",
+      "mythology": "Greek",
+      "title": "God of War and Violence",
+      "role": "Aggressive Debugging & Testing",
+      "tier": "Warrior",
+      "size": "4.1GB",
+      "power": "Battle-Hardened DPO",
+      "emoji": "⚔️"
+    },
+    "mistral-7b-openorca.gguf2.q4_0.gguf": {
+      "name": "KALI",
+      "mythology": "Hindu",
+      "title": "Goddess of Destruction",
+      "role": "Code Refactoring & Pattern Destruction",
+      "tier": "Warrior",
+      "size": "4.1GB",
+      "power": "Destroys Ignorance",
+      "emoji": "🗡️"
+    },
+    "ghost-7b-v0.9.1-q4_0.gguf": {
+      "name": "SEKHMET",
+      "mythology": "Egyptian",
+      "title": "Warrior Goddess",
+      "role": "Security Testing & Vulnerability Detection",
+      "tier": "Warrior",
+      "size": "4.1GB",
+      "power": "Hunts Invisible Threats",
+      "emoji": "🛡️"
+    },
+    "wizardlm-13b-v1.2.q4_0.gguf": {
+      "name": "OSIRIS",
+      "mythology": "Egyptian",
+      "title": "God of Resurrection",
+      "role": "Legacy Code Resurrection",
+      "tier": "Wisdom",
+      "size": "7.4GB",
+      "power": "13B Wise Wizard",
+      "emoji": "🧙"
+    },
+    "gpt4all-13b-snoozy-q4_0.gguf": {
+      "name": "YAMA",
+      "mythology": "Hindu",
+      "title": "Lord of Death, Judge of Karma",
+      "role": "Code Review & Quality Judgment",
+      "tier": "Wisdom",
+      "size": "7.4GB",
+      "power": "Patient Observer",
+      "emoji": "⚖️"
+    },
+    "nous-hermes-llama2-13b.q4_0.gguf": {
+      "name": "ODIN",
+      "mythology": "Norse",
+      "title": "All-Father, God of Wisdom",
+      "role": "Strategic Planning & Architecture",
+      "tier": "Wisdom",
+      "size": "7.4GB",
+      "power": "13B Mind/Wisdom",
+      "emoji": "👁️"
+    },
+    "dolphin-2.8-mistral-7b-v02-q6_k.gguf": {
+      "name": "CHARON",
+      "mythology": "Greek",
+      "title": "Ferryman of the Dead",
+      "role": "Data Transfer & API Integration",
+      "tier": "Underworld",
+      "size": "5.9GB",
+      "power": "Swims Between Worlds",
+      "emoji": "🚣"
+    },
+    "gpt4all-falcon-newbpe-q4_0.gguf": {
+      "name": "HADES",
+      "mythology": "Greek",
+      "title": "God of the Underworld",
+      "role": "Database & Backend Operations",
+      "tier": "Underworld",
+      "size": "4.2GB",
+      "power": "Modern Tokenization",
+      "emoji": "👑"
+    },
+    "mpt-7b-chat.gguf4.q4_0.gguf": {
+      "name": "ERESHKIGAL",
+      "mythology": "Mesopotamian",
+      "title": "Queen of the Underworld",
+      "role": "Conversational AI & User Interaction",
+      "tier": "Underworld",
+      "size": "3.8GB",
+      "power": "Conversation Specialist",
+      "emoji": "💬"
+    },
+    "deepseek-r1-distill-llama-8b-q4_0.gguf": {
+      "name": "AZRAEL",
+      "mythology": "Islamic",
+      "title": "Angel of Death",
+      "role": "Code Analysis & Separation of Concerns",
+      "tier": "Minor",
+      "size": "4.7GB",
+      "power": "Refined Essence",
+      "emoji": "👼"
+    },
+    "deepseek-r1-distill-qwen-1.5b-q4_0.gguf": {
+      "name": "PSYCHE",
+      "mythology": "Greek",
+      "title": "Goddess of the Soul",
+      "role": "Lightweight Reasoning & Logic",
+      "tier": "Minor",
+      "size": "1.1GB",
+      "power": "Small but Intelligent",
+      "emoji": "🦋"
+    },
+    "orca-mini-3b-gguf2-q4_0.gguf": {
+      "name": "MORANA",
+      "mythology": "Slavic",
+      "title": "Goddess of Winter and Death",
+      "role": "Quick Tasks & Simple Operations",
+      "tier": "Minor",
+      "size": "1.9GB",
+      "power": "Efficient Mini",
+      "emoji": "❄️"
+    },
+    "qwen2-1_5b-instruct-q4_0.gguf": {
+      "name": "IZANAMI",
+      "mythology": "Japanese",
+      "title": "Goddess of Death and Creation",
+      "role": "Rapid Prototyping & Quick Generation",
+      "tier": "Minor",
+      "size": "937MB",
+      "power": "Fastest Creation",
+      "emoji": "⚡"
+    },
+    "nomic-embed-text-v1.5.f16.gguf": {
+      "name": "NEPHTHYS",
+      "mythology": "Egyptian",
+      "title": "Goddess of Mourning",
+      "role": "Text Embeddings & Semantic Search",
+      "tier": "Special",
+      "size": "274MB",
+      "power": "Preserves Meaning",
+      "emoji": "🔍"
+    },
+    "v2-1_768-nonema-pruned-q8_0.gguf": {
+      "name": "PERSEPHONE",
+      "mythology": "Greek",
+      "title": "Queen of the Underworld",
+      "role": "Image Generation (Stable Diffusion)",
+      "tier": "Special",
+      "size": "2.0GB",
+      "power": "Brings Life to Darkness",
+      "emoji": "🎨"
+    }
+  },
+  "usage_recommendations": {
+    "coding_projects": {
+      "primary": ["THANATOS", "MORRIGAN", "ANUBIS"],
+      "backup": ["HEL", "ARES"],
+      "description": "Generation → Analysis → Validation"
+    },
+    "large_projects": {
+      "primary": ["ODIN", "OSIRIS", "YAMA"],
+      "description": "Architecture → Implementation → Review"
+    },
+    "quick_tasks": {
+      "primary": ["IZANAMI", "MORANA", "PSYCHE"],
+      "description": "Fast prototyping and simple operations"
+    },
+    "security": {
+      "primary": ["SEKHMET", "KALI", "ARES"],
+      "description": "Detection → Destruction → Testing"
+    },
+    "conversation": {
+      "primary": ["ERESHKIGAL", "CHARON", "HEL"],
+      "description": "Natural interaction and chat"
+    }
+  },
+  "tiers": {
+    "Primary": "👑 Main models for core development",
+    "Warrior": "⚔️ Combat-focused analysis and testing",
+    "Wisdom": "🧙 Large models for complex tasks",
+    "Underworld": "🌊 Specialized backend operations",
+    "Minor": "🔮 Small, fast, specialized models",
+    "Special": "🎨 Non-text specialized models"
+  }
+}

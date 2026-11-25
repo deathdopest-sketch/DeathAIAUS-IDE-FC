@@ -1,0 +1,167 @@
+/* ==========================================================================
+   DeathAI Australia — design tokens
+   Layer 1: raw channels (R G B) consumed by Tailwind via rgb(var(--c-*) / a)
+   Layer 2: semantic tokens (--bg-*, --text-*, --accent-*) consumed by components
+   See DESIGN_SYSTEM.md for usage rules.
+   ========================================================================== */
+
+:root,
+:root[data-theme='deathai'] {
+  /* --- Raw channels ----------------------------------------------------- */
+  /* Mirrors components/death_theme.py in the Tkinter IDE. */
+  --c-void: 3 2 3;
+  --c-bone: 217 208 193;          /* #d9d0c1  aged bone */
+
+  --c-blood-light: 255 36 64;     /* #ff2440  fresh — text, glitch fringe, hover */
+  --c-blood-base: 163 0 27;       /* #a3001b  arterial — primary fills */
+  --c-blood-deep: 58 0 9;         /* #3a0009  clotted — tints, wells */
+
+  --c-signal-light: 141 232 238;  /* #8de8ee */
+  --c-signal-base: 62 199 209;    /* #3ec7d1  sickly cyan — RGB-split partner, info */
+  --c-signal-deep: 13 58 62;
+
+  --c-phosphor-light: 185 229 129;
+  --c-phosphor-base: 143 201 74;  /* #8fc94a  bile — success, terminal */
+  --c-phosphor-deep: 31 48 15;
+
+  --c-amber-light: 240 190 90;
+  --c-amber-base: 217 154 30;     /* #d99a1e  warnings, pending */
+  --c-amber-deep: 70 46 6;
+
+  --c-ochre-light: 200 110 66;
+  --c-ochre-base: 156 74 36;      /* #9c4a24  "AUS" outback earth, sparingly */
+  --c-ochre-deep: 60 26 12;
+
+  --c-ash-light: 140 128 120;
+  --c-ash-base: 43 22 25;
+  --c-ash-deep: 26 13 15;
+
+  /* --- Semantic: surfaces (red-black, never neutral grey) --------------- */
+  --bg-primary: #070405;      /* editor, inputs */
+  --bg-secondary: #0b0607;    /* side panels */
+  --bg-tertiary: #110a0b;     /* toolbars, headers, cards */
+  --bg-hover: #1c1012;
+  --bg-elevated: #0e0809;     /* dialogs */
+
+  /* --- Semantic: text --------------------------------------------------- */
+  --text-primary: #d9d0c1;
+  --text-secondary: #8c8078;
+  --text-muted: #544a46;
+
+  /* --- Semantic: lines (dried blood) ------------------------------------ */
+  --border-primary: #2b1619;
+  --border-secondary: #1a0d0f;
+  --border-hot: rgb(var(--c-blood-light));
+
+  /* --- Semantic: accents ------------------------------------------------ */
+  --accent-primary: #a3001b;
+  --accent-primary-hover: #ff2440;
+  --accent-primary-text: #d9d0c1;
+  --accent-danger: #a3001b;
+  --accent-danger-light: #ff2440;
+  --accent-danger-hover: #3a0009;
+  --accent-warning: #2a1c04;
+  --accent-warning-text: #d99a1e;
+  --accent-success: #8fc94a;
+  --accent-success-hover: #1f300f;
+  --accent-info: #3ec7d1;
+  --accent-info-hover: #8de8ee;
+  --accent-special: #9c4a24;
+  --brand-text: #ff2440;
+  --link-text: #3ec7d1;
+
+  --terminal-bg: #030203;
+  --terminal-text: #8fc94a;
+  --button-disabled-bg: #110a0b;
+  --button-disabled-text: #3d3330;
+  --scrollbar-thumb: #2b1619;
+  --scrollbar-track: #070405;
+
+  /* --- Effects ---------------------------------------------------------- */
+  --glitch-a: rgb(var(--c-blood-light));
+  --glitch-b: rgb(var(--c-signal-base));
+  --scanline-opacity: 0.12;
+  --noise-opacity: 0.06;
+  --vignette: 0.75;               /* dark edges closing in */
+  --glow-strength: 1;
+
+  /* --- Type ------------------------------------------------------------- */
+  --font-ui: 'Chakra Petch', system-ui, sans-serif;
+  --font-code: 'JetBrains Mono', Consolas, monospace;
+
+  /* --- Shape & rhythm --------------------------------------------------- */
+  --radius: 2px;
+  --cut: 10px;                    /* size of the clipped corner on panels/buttons */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --bar-h: 56px;                  /* main toolbar */
+  --header-h: 40px;               /* pane headers */
+  --status-h: 30px;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='deathai'][data-bg-image='true'] {
+  --bg-primary: rgba(7, 4, 5, 0.86);
+  --bg-secondary: rgba(11, 6, 7, 0.86);
+  --bg-tertiary: rgba(17, 10, 11, 0.9);
+  --terminal-bg: rgba(3, 2, 3, 0.88);
+}
+
+/* --------------------------------------------------------------------------
+   Legacy themes — kept selectable, now sharing the same token names.
+   -------------------------------------------------------------------------- */
+
+:root[data-theme='dark'] {
+  --bg-primary: #1e1e1e; --bg-secondary: #252525; --bg-tertiary: #2d2d2d; --bg-hover: #3a3a3a; --bg-elevated: #262626;
+  --text-primary: #e0e0e0; --text-secondary: #b0b0b0; --text-muted: #808080;
+  --border-primary: #444; --border-secondary: #333;
+  --terminal-bg: #1a1a1a; --scrollbar-thumb: #555; --scrollbar-track: #2a2a2a;
+  --scanline-opacity: 0.03; --noise-opacity: 0.02; --vignette: 0;
+}
+
+:root[data-theme='light'] {
+  --c-ash-light: 120 120 128; --c-ash-base: 214 214 220; --c-ash-deep: 236 236 240;
+  --bg-primary: #fbfaf7; --bg-secondary: #f1efe9; --bg-tertiary: #e8e5dd; --bg-hover: #dcd8ce; --bg-elevated: #ffffff;
+  --text-primary: #141418; --text-secondary: #4a4852; --text-muted: #8a8794;
+  --border-primary: #cfcac0; --border-secondary: #e0dcd3;
+  --accent-warning: #fff3d6; --accent-warning-text: #8a5a00;
+  --accent-success: #0f8a4a; --link-text: #007a8a;
+  --terminal-bg: #f1efe9; --terminal-text: #0f5c32;
+  --button-disabled-bg: #e0dcd3; --button-disabled-text: #a8a49c;
+  --scrollbar-thumb: #c4bfb4; --scrollbar-track: #f1efe9;
+  --scanline-opacity: 0; --noise-opacity: 0.03; --vignette: 0;
+  color-scheme: light;
+}
+
+:root[data-theme='gothic'] {
+  --c-blood-base: 187 154 247; --c-blood-light: 205 182 250; --c-blood-deep: 60 45 95;
+  --bg-primary: #1a1b26; --bg-secondary: #24283b; --bg-tertiary: #1f2335; --bg-hover: #414868; --bg-elevated: #1f2335;
+  --text-primary: #a9b1d6; --text-secondary: #787c99; --text-muted: #565f89;
+  --border-primary: #414868; --border-secondary: #2a2f4a;
+  --accent-primary: #bb9af7; --accent-primary-text: #1a1b26; --brand-text: #bb9af7;
+  --terminal-bg: #16161e; --terminal-text: #9ece6a; --link-text: #7dcfff;
+  --scrollbar-thumb: #565f89; --scrollbar-track: #1f2335;
+}
+
+:root[data-theme='cyberpunk'] {
+  --c-blood-base: 249 38 114; --c-blood-light: 255 85 153; --c-blood-deep: 90 10 50;
+  --c-signal-base: 255 238 0; --c-signal-light: 255 245 120;
+  --bg-primary: #0d0221; --bg-secondary: #261447; --bg-tertiary: #210d3a; --bg-hover: #4a2b7a; --bg-elevated: #1a0a33;
+  --text-primary: #f0f0f0; --text-secondary: #a0a0a0; --text-muted: #6c6c6c;
+  --border-primary: #5c0099; --border-secondary: #3b0066;
+  --accent-primary: #f92672; --brand-text: #ffee00; --link-text: #00f0ff;
+  --terminal-bg: #03000a; --terminal-text: #00f7a5;
+  --scrollbar-thumb: #f92672; --scrollbar-track: #261447;
+  --scanline-opacity: 0.1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --glow-strength: 0; }
+}

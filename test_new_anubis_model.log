@@ -1,0 +1,11 @@
+2025-10-12 12:05:16,590 - INFO - ============================================================
+2025-10-12 12:05:16,591 - INFO - ANUBIS MODEL TEST - Starting
+2025-10-12 12:05:16,591 - INFO - ============================================================
+2025-10-12 12:05:16,591 - INFO - Found GGUF file: DeathAIAUS-Anubis-Phi-1.5-Q8_0.gguf (1.41 GB)
+2025-10-12 12:05:16,591 - INFO - Starting simple_backend.py...
+2025-10-12 12:05:21,597 - INFO - Backend started successfully
+2025-10-12 12:05:21,597 - INFO - Testing backend health...
+2025-10-12 12:05:25,690 - ERROR - Health check failed: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000194D8D27620>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-12 12:05:25,696 - ERROR - Backend health check failed. Aborting.
+2025-10-12 12:05:25,697 - INFO - Stopping backend...
+2025-10-12 12:05:25,702 - INFO - Backend stopped

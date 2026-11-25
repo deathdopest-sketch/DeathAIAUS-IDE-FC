@@ -1,0 +1,20 @@
+# DeathAIAUS IDE F.C - Hybrid Edition Requirements
+# Version: 5.0 - React UI + Python Backend
+
+# Core dependencies
+requests>=2.31.0
+
+# Hybrid IDE dependencies
+pywebview>=4.0
+flask>=2.3.0
+flask-cors>=4.0.0
+psutil>=5.9.0
+
+# Optional but RECOMMENDED for full AI functionality:
+# For best AI performance with GPU (NVIDIA):
+# pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121
+#
+# For GPU acceleration (Apple Silicon):
+# pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal
+#
+# Note: llama-cpp-python is optional. The IDE will work without it using Python fallback mode.

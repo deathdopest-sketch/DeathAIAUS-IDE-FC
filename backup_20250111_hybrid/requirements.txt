@@ -1,0 +1,19 @@
+# DeathAIAUS IDE F.C - Requirements
+# Version: 4.0 - Fully Integrated AI
+
+# Core dependencies
+requests>=2.31.0
+# tkinter usually comes with Python
+
+# Optional but RECOMMENDED for full AI functionality:
+#
+# For best AI performance:
+# pip install llama-cpp-python
+#
+# For GPU acceleration (NVIDIA):
+# pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121
+#
+# For GPU acceleration (Apple Silicon):
+# pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal
+#
+# Note: llama-cpp-python is optional. The IDE will work without it using Python fallback mode.

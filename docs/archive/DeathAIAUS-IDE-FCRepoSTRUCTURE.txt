@@ -1,0 +1,16 @@
+DeathAIAUS-IDE-FC/
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── .gitignore
+├── requirements.txt
+├── MODEL_TOOLS.py
+├── REALISTIC_CODING_IDE.py
+├── docs/
+│   ├── INSTALLATION.md
+│   ├── USAGE.md
+│   ├── FEASIBILITY_SYSTEM.md
+│   └── SCREENSHOTS/
+├── examples/
+│   └── example_projects.md
+└── workspace/ (gitignored)

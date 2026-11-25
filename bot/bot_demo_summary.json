@@ -1,0 +1,32 @@
+{
+  "project_name": "BotDemoProject",
+  "workspace_path": "C:\\Users\\Death\\Desktop\\DeathAIAUS-IDE-FC\\workspace\\bot_demo",
+  "files_created": [
+    {
+      "name": ".gitignore",
+      "size": 127,
+      "path": "C:\\Users\\Death\\Desktop\\DeathAIAUS-IDE-FC\\workspace\\bot_demo\\.gitignore"
+    },
+    {
+      "name": "main.py",
+      "size": 846,
+      "path": "C:\\Users\\Death\\Desktop\\DeathAIAUS-IDE-FC\\workspace\\bot_demo\\main.py"
+    },
+    {
+      "name": "README.md",
+      "size": 344,
+      "path": "C:\\Users\\Death\\Desktop\\DeathAIAUS-IDE-FC\\workspace\\bot_demo\\README.md"
+    },
+    {
+      "name": "requirements.txt",
+      "size": 75,
+      "path": "C:\\Users\\Death\\Desktop\\DeathAIAUS-IDE-FC\\workspace\\bot_demo\\requirements.txt"
+    },
+    {
+      "name": "test_calculator.py",
+      "size": 979,
+      "path": "C:\\Users\\Death\\Desktop\\DeathAIAUS-IDE-FC\\workspace\\bot_demo\\test_calculator.py"
+    }
+  ],
+  "created_at": "2025-11-29 14:04:55"
+}

@@ -1,0 +1,110 @@
+2025-11-29 14:03:09,608 [INFO] ============================================================
+2025-11-29 14:03:09,608 [INFO] IDE Automation Bot - Logging Initialized
+2025-11-29 14:03:09,609 [INFO] Log file: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\bot\logs\bot_20251129_140309.log
+2025-11-29 14:03:09,609 [INFO] ============================================================
+2025-11-29 14:03:09,609 [INFO] ============================================================
+2025-11-29 14:03:09,609 [INFO] IDE AUTOMATION BOT - FULL DEMO
+2025-11-29 14:03:09,609 [INFO] ============================================================
+2025-11-29 14:03:09,609 [INFO] 
+2025-11-29 14:03:09,609 [INFO] Step 1: Launching IDE...
+2025-11-29 14:03:09,609 [INFO] ============================================================
+2025-11-29 14:03:09,609 [INFO] Launching DeathAIAUS IDE...
+2025-11-29 14:03:09,611 [INFO] ============================================================
+2025-11-29 14:03:09,611 [DEBUG] Checking for IDE script at: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\deathaius_ide_fc.py
+2025-11-29 14:03:09,611 [DEBUG] IDE script found: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\deathaius_ide_fc.py
+2025-11-29 14:03:09,611 [DEBUG] IDE script size: 191970 bytes
+2025-11-29 14:03:09,611 [INFO] Starting IDE: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\deathaius_ide_fc.py
+2025-11-29 14:03:09,611 [DEBUG] Python executable: C:\Users\Death\AppData\Local\Programs\Python\Python312\python.exe
+2025-11-29 14:03:09,611 [DEBUG] Working directory: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC
+2025-11-29 14:03:09,623 [INFO] IDE process started with PID: 85744
+2025-11-29 14:03:09,624 [DEBUG] Process returncode: None
+2025-11-29 14:03:09,624 [INFO] Waiting for IDE to initialize...
+2025-11-29 14:03:12,624 [INFO] Waiting for IDE window to appear...
+2025-11-29 14:03:12,624 [INFO] Waiting (no pyautogui, using time delay)...
+2025-11-29 14:03:17,625 [INFO] [OK] IDE window detected
+2025-11-29 14:03:17,625 [INFO] [OK] IDE launched successfully
+2025-11-29 14:03:19,626 [INFO] \nStep 2: Creating project...
+2025-11-29 14:03:19,627 [INFO] ============================================================
+2025-11-29 14:03:19,627 [INFO] Creating project directly...
+2025-11-29 14:03:19,627 [INFO] ============================================================
+2025-11-29 14:03:19,627 [DEBUG] Creating workspace directory: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo
+2025-11-29 14:03:19,627 [INFO] Created workspace: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo
+2025-11-29 14:03:19,627 [DEBUG] Workspace exists: True
+2025-11-29 14:03:19,627 [DEBUG] Workspace is directory: True
+2025-11-29 14:03:19,627 [INFO] Creating 4 project files...
+2025-11-29 14:03:19,627 [DEBUG] Writing file: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\main.py
+2025-11-29 14:03:19,627 [DEBUG] Content length: 807 characters
+2025-11-29 14:03:19,629 [INFO] Created: main.py (846 bytes)
+2025-11-29 14:03:19,629 [DEBUG] File verified: True
+2025-11-29 14:03:19,629 [DEBUG] Writing file: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\README.md
+2025-11-29 14:03:19,629 [DEBUG] Content length: 325 characters
+2025-11-29 14:03:19,629 [INFO] Created: README.md (344 bytes)
+2025-11-29 14:03:19,629 [DEBUG] File verified: True
+2025-11-29 14:03:19,629 [DEBUG] Writing file: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\requirements.txt
+2025-11-29 14:03:19,629 [DEBUG] Content length: 73 characters
+2025-11-29 14:03:19,630 [INFO] Created: requirements.txt (75 bytes)
+2025-11-29 14:03:19,630 [DEBUG] File verified: True
+2025-11-29 14:03:19,630 [DEBUG] Writing file: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\.gitignore
+2025-11-29 14:03:19,630 [DEBUG] Content length: 113 characters
+2025-11-29 14:03:19,631 [INFO] Created: .gitignore (127 bytes)
+2025-11-29 14:03:19,631 [DEBUG] File verified: True
+2025-11-29 14:03:19,631 [INFO] Created: test_calculator.py (979 bytes)
+2025-11-29 14:03:19,632 [INFO] Verifying all files were created...
+2025-11-29 14:03:19,632 [INFO] [OK] All project files verified
+2025-11-29 14:03:19,632 [INFO] \nProject created successfully at: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo
+2025-11-29 14:03:19,632 [INFO] Total files in workspace: 6
+2025-11-29 14:03:19,632 [DEBUG]   - .gitignore (127 bytes)
+2025-11-29 14:03:19,632 [DEBUG]   - main.py (846 bytes)
+2025-11-29 14:03:19,632 [DEBUG]   - README.md (344 bytes)
+2025-11-29 14:03:19,632 [DEBUG]   - requirements.txt (75 bytes)
+2025-11-29 14:03:19,632 [DEBUG]   - test_calculator.py (979 bytes)
+2025-11-29 14:03:19,632 [INFO] [OK] Project created successfully
+2025-11-29 14:03:20,633 [INFO] \nStep 3: Running project...
+2025-11-29 14:03:20,633 [INFO] ============================================================
+2025-11-29 14:03:20,633 [INFO] Running the project...
+2025-11-29 14:03:20,633 [INFO] ============================================================
+2025-11-29 14:03:20,633 [DEBUG] Checking for main.py at: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\main.py
+2025-11-29 14:03:20,633 [DEBUG] main.py found: True
+2025-11-29 14:03:20,633 [DEBUG] main.py size: 846 bytes
+2025-11-29 14:03:20,633 [INFO] Executing main.py...
+2025-11-29 14:03:20,633 [DEBUG] Command: C:\Users\Death\AppData\Local\Programs\Python\Python312\python.exe C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\main.py
+2025-11-29 14:03:20,633 [DEBUG] Working directory: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo
+2025-11-29 14:03:20,674 [DEBUG] Process return code: 0
+2025-11-29 14:03:20,674 [DEBUG] stdout length: 145 characters
+2025-11-29 14:03:20,674 [DEBUG] stderr length: 0 characters
+2025-11-29 14:03:20,674 [INFO] [OK] Project executed successfully!
+2025-11-29 14:03:20,674 [INFO] Output:
+2025-11-29 14:03:20,674 [INFO] [OK] Project executed successfully
+2025-11-29 14:03:21,675 [INFO] \nStep 4: Running tests...
+2025-11-29 14:03:21,675 [INFO] ============================================================
+2025-11-29 14:03:21,675 [INFO] Running tests...
+2025-11-29 14:03:21,675 [INFO] ============================================================
+2025-11-29 14:03:21,675 [DEBUG] Checking for test file at: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\test_calculator.py
+2025-11-29 14:03:21,675 [DEBUG] Test file found: True
+2025-11-29 14:03:21,675 [DEBUG] Test file size: 979 bytes
+2025-11-29 14:03:21,675 [INFO] Executing tests...
+2025-11-29 14:03:21,675 [DEBUG] Command: C:\Users\Death\AppData\Local\Programs\Python\Python312\python.exe C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo\test_calculator.py
+2025-11-29 14:03:21,722 [DEBUG] Test return code: 0
+2025-11-29 14:03:21,722 [DEBUG] Test stdout length: 189 characters
+2025-11-29 14:03:21,722 [DEBUG] Test stderr length: 0 characters
+2025-11-29 14:03:21,722 [INFO] [OK] All tests passed!
+2025-11-29 14:03:21,722 [INFO] Test output:
+2025-11-29 14:03:21,723 [INFO] [OK] All tests passed
+2025-11-29 14:03:21,723 [INFO] \nStep 5: Creating summary...
+2025-11-29 14:03:21,724 [INFO] Summary saved to: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\bot\bot_demo_summary.json
+2025-11-29 14:03:21,724 [INFO] [OK] Summary created
+2025-11-29 14:03:21,724 [INFO] \n============================================================
+2025-11-29 14:03:21,724 [INFO] DEMO COMPLETE!
+2025-11-29 14:03:21,725 [INFO] ============================================================
+2025-11-29 14:03:21,725 [INFO] Project location: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\workspace\bot_demo
+2025-11-29 14:03:21,725 [INFO] Files created: 5
+2025-11-29 14:03:21,725 [INFO]   - .gitignore (127 bytes)
+2025-11-29 14:03:21,725 [INFO]   - main.py (846 bytes)
+2025-11-29 14:03:21,725 [INFO]   - README.md (344 bytes)
+2025-11-29 14:03:21,725 [INFO]   - requirements.txt (75 bytes)
+2025-11-29 14:03:21,725 [INFO]   - test_calculator.py (979 bytes)
+2025-11-29 14:03:21,725 [INFO] \nFull log saved to: C:\Users\Death\Desktop\DeathAIAUS-IDE-FC\bot\logs\bot_20251129_140309.log
+2025-11-29 14:03:21,725 [INFO] Cleaning up...
+2025-11-29 14:03:21,725 [DEBUG] Terminating IDE process (PID: 85744)
+2025-11-29 14:03:21,743 [INFO] [OK] IDE process terminated
+2025-11-29 14:03:21,743 [INFO] Cleanup complete
